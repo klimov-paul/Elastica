@@ -34,7 +34,6 @@ class SearchSeqNoPrimaryTermTest extends BaseTest
     }
 
     /**
-     * @covers \Elastica\Search::OPTION_SEQ_NO_PRIMARY_TERM
      * @covers \Elastica\Search::setOption
      *
      * @group unit
@@ -51,7 +50,6 @@ class SearchSeqNoPrimaryTermTest extends BaseTest
     }
 
     /**
-     * @covers \Elastica\Search::OPTION_SEQ_NO_PRIMARY_TERM
      * @covers \Elastica\Search::search
      *
      * @group functional
@@ -75,7 +73,6 @@ class SearchSeqNoPrimaryTermTest extends BaseTest
     }
 
     /**
-     * @covers \Elastica\Search::OPTION_SEQ_NO_PRIMARY_TERM
      * @covers \Elastica\Search::setOptionsAndQuery
      *
      * @group unit
