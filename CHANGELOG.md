@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Added support for Component Template [#2274](https://github.com/ruflin/Elastica/pull/2274)
 * Added support for Index Template  [#2274](https://github.com/ruflin/Elastica/pull/2274)
 * Added Template class to target only legacy Template [#2274](https://github.com/ruflin/Elastica/pull/2274)
+* Added support for `seq_no_primary_term` search option to retrieve sequence numbers and primary terms in search results
+* Added support for `if_seq_no` and `if_primary_term` options in `Index::addDocument()` for optimistic concurrency control
 ### Changed
 ### Deprecated
 ### Removed

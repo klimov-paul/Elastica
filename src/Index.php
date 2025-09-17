@@ -207,6 +207,8 @@ class Index implements SearchableInterface
         $options = $doc->getOptions(
             [
                 'consistency',
+                'if_seq_no',
+                'if_primary_term',
                 'op_type',
                 'parent',
                 'percolate',
