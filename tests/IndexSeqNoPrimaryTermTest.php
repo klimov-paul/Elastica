@@ -31,9 +31,10 @@ class IndexSeqNoPrimaryTermTest extends BaseTest
     }
 
     /**
-     * @covers \Elastica\Index::addDocument
-     * @covers \Elastica\AbstractUpdateAction::setSequenceNumber
      * @covers \Elastica\AbstractUpdateAction::setPrimaryTerm
+     * @covers \Elastica\AbstractUpdateAction::setSequenceNumber
+     * @covers \Elastica\Index::addDocument
+     *
      * @group functional
      */
     public function testAddDocumentWithSeqNoPrimaryTerm(): void
@@ -48,9 +49,10 @@ class IndexSeqNoPrimaryTermTest extends BaseTest
     }
 
     /**
-     * @covers \Elastica\Index::addDocument
-     * @covers \Elastica\AbstractUpdateAction::setSequenceNumber
      * @covers \Elastica\AbstractUpdateAction::setPrimaryTerm
+     * @covers \Elastica\AbstractUpdateAction::setSequenceNumber
+     * @covers \Elastica\Index::addDocument
+     *
      * @group functional
      */
     public function testAddDocumentWithOptimisticConcurrencyControl(): void
@@ -79,9 +81,10 @@ class IndexSeqNoPrimaryTermTest extends BaseTest
     }
 
     /**
-     * @covers \Elastica\Index::addDocument
-     * @covers \Elastica\AbstractUpdateAction::setSequenceNumber
      * @covers \Elastica\AbstractUpdateAction::setPrimaryTerm
+     * @covers \Elastica\AbstractUpdateAction::setSequenceNumber
+     * @covers \Elastica\Index::addDocument
+     *
      * @group functional
      */
     public function testAddDocumentWithStaleSeqNoPrimaryTerm(): void
