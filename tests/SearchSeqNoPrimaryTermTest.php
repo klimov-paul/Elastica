@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Elastica\Test;
 
+use Elastica\Client;
 use Elastica\Document;
 use Elastica\Index;
 use Elastica\Search;
@@ -40,8 +41,8 @@ class SearchSeqNoPrimaryTermTest extends BaseTest
      */
     public function testSetSeqNoPrimaryTermOption(): void
     {
-        $search = new Search($this->_getClient());
-        $search->addIndex($this->index);
+        $client = $this->createMock(Client::class);
+        $search = new Search($client);
 
         $search->setOption(Search::OPTION_SEQ_NO_PRIMARY_TERM, true);
 
@@ -79,8 +80,8 @@ class SearchSeqNoPrimaryTermTest extends BaseTest
      */
     public function testSetOptionsAndQueryWithSeqNoPrimaryTerm(): void
     {
-        $search = new Search($this->_getClient());
-        $search->addIndex($this->index);
+        $client = $this->createMock(Client::class);
+        $search = new Search($client);
 
         $options = [
             Search::OPTION_SEQ_NO_PRIMARY_TERM => true,
