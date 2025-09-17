@@ -12,6 +12,7 @@ This file provides guidance to AI agents when working with code in this reposito
     - Prioritize backward compatibility and type safety in all code changes.
     - Ensure comprehensive test coverage for any new or modified code.
     - Keep the `CHANGELOG.md` file updated with all significant changes.
+    - **MANDATORY**: Run `make fix-phpcs` before each commit to ensure code follows PSR-2 standards.
 
 ## Tools
 
@@ -51,6 +52,13 @@ This file provides guidance to AI agents when working with code in this reposito
 - **Checking coding standards**: `make run-phpcs`
 - **Fixing coding standards**: `make fix-phpcs`
 - **Running static analysis**: `make run-phpstan`
+
+### Commit Workflow
+
+- **Before each commit**: ALWAYS run `make fix-phpcs` to ensure code follows PSR-2 standards
+- **After fixing**: Run `make run-phpcs` to verify no issues remain
+- **Test before commit**: Run relevant tests to ensure functionality works
+- **Update CHANGELOG**: Add entries for significant changes (except test-only changes)
 
 ## Knowledge
 
